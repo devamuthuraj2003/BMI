@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/color.css" type="text/css">
+    <script src="/js/script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="back">
+        <div class="head">
+            <h1>BMI Calculator</h1>
+        </div>
+        <div class="formdiv">
+            <form onsubmit="event.preventDefault(); calc();" method="post">
+                <div class="inputlab">
+                    <label for="height" id="hei">Height</label>
+                    <input type="number" id="heig" name="height"><br>
+                </div>
+               <div class="inputlab">
+                    <label for="weight" id="wei">Weight</label>
+                    <input type="number" name="weig" id="weight"><br>
+               </div>
+                <div class="inputlab">
+                    <label for="bmival" id="bmiv">BMI&nbsp;&nbsp;&nbsp;</label>
+                    <input type="text" id="bmiva" name="bmival" readonly>
+                </div>
+                <div class="inputbut">
+                    <button type="submit">Calculate</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
